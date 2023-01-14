@@ -3,7 +3,7 @@ import { emailController } from '../controllers/EmailController'
 
 export const router = Router()
 
-router.post('/', (req, res) => {
+router.get('/', (req, res) => {
   res.json('Feedback server')
 })
 
