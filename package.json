@@ -6,8 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "npx tsc",
-    "start": "vercel dev",
-    "deploy" : "vercel deploy --prod",
+    "start": "nodemon src/index.ts",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
   },
   "dependencies": {
