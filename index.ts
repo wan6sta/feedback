@@ -16,4 +16,4 @@ app.listen(appConstants.port, () => {
   )
 })
 
-export default app
+module.exports = app
