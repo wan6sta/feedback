@@ -23,7 +23,7 @@ class EmailController {
                     subject: `Reverse review from ${name}`,
                     html: `${text}`
                 });
-                res.status(200).send('Message sent');
+                res.status(200).send('Message sent ');
             }
             catch (e) {
                 res.status(400).send('Some error occurred');
