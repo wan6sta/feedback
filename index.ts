@@ -15,3 +15,5 @@ app.listen(appConstants.port, () => {
     `[server]: Server is running at http://localhost:${appConstants.port}`
   )
 })
+
+export default app
