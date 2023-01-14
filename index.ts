@@ -2,13 +2,13 @@ import express, { Express } from 'express'
 import cors from 'cors'
 import { appConstants } from './app/config/appConstants'
 import { corsConfig } from './app/config/corsConfig'
+import { router } from './app/router/router'
 
 const app: Express = express()
-app.use(cors(corsConfig))
 
-app.get('/', (req, res) => {
-  res.send('Express + TypeScript Server')
-})
+app.use(express.json())
+app.use(cors(corsConfig))
+app.use('', router)
 
 app.listen(appConstants.port, () => {
   console.log(
