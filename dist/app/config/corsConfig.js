@@ -8,6 +8,6 @@ const appConstants_1 = require("./appConstants");
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 exports.corsConfig = {
-    origin: `${appConstants_1.appConstants.client_dev_url}`,
+    origin: [appConstants_1.appConstants.client_dev_url, appConstants_1.appConstants.client_prod_url],
     optionsSuccessStatus: 200
 };
