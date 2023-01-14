@@ -6,14 +6,16 @@
   "license": "MIT",
   "scripts": {
     "build": "npx tsc",
-    "start": "node dist/index.js",
+    "start": "vercel dev",
+    "deploy" : "vercel deploy --prod",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "nodemailer": "^6.9.0"
+    "nodemailer": "^6.9.0",
+    "vercel": "^28.12.4"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
