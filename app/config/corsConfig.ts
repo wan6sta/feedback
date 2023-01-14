@@ -5,6 +5,6 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 export const corsConfig: CorsOptions = {
-  origin: appConstants.client_dev_url,
+  origin: [appConstants.client_dev_url],
   optionsSuccessStatus: 200
 }
