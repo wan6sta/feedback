@@ -4,6 +4,7 @@
 # production
 /dist
 .idea
+/public
 
 # misc
 .env

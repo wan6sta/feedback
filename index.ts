@@ -9,7 +9,7 @@ const app: Express = express()
 app.use(express.json())
 app.use(cors(corsConfig))
 app.use('', router)
-app.use(express.static('dist'))
+app.use(express.static('public'))
 
 app.listen(appConstants.port, () => {
   console.log(
